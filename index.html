@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Naat ki Duniya</title>
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <section class="hero">
@@ -53,6 +54,55 @@
   <h3>Madni Kafla of Madni Channel Naatkhuaw | Competition | Team A,B</h3>
   <a href="https://youtu.be/zc751yyLvXc?si=AuQShoTwhsqbsbAP" target="_blank" class="watch-button">▶ Watch Full Video</a>
 </div>
+<div class="social-links">
+  <a href="https://www.facebook.com/share/1SoXqpwNDD/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://youtube.com/@officialnaatkidunya?si=41rm96Sf7adHhYbn" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.instagram.com/official_naat_ki_dunya?igsh=ZnB0dGZuaWZxbGU1" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+<div class="dark-toggle" onclick="toggleDarkMode()">
+  <i class="fas fa-moon"></i>
+</div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    const icon = document.querySelector(".dark-toggle i");
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    } else {
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+    }
+  }
+</script>
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  
+  <<div class="contact-info">
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:naatkidunya901@gmail.com">naatkidunya901@gmail.com</a>
+  </p>
+  <p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/923134963901" target="_blank">+92 313 4963901</a>
+  </p>
+</div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 </section>
     </div>
